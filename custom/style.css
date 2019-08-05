@@ -1,0 +1,392 @@
+body{
+margin:0px;
+padding:0px;
+}
+
+    /*Top nave with social media*/
+.top-col-padding{
+    padding: 5px 0px;
+}
+.top-link > a{
+    color: white;
+    font-size: 10px;
+    font-variant: small-caps;
+    padding-left: 15px;
+}
+.top-link > a:hover{
+    text-decoration: none;
+    color: gray;
+}
+.top-social-media{
+    text-align: -webkit-center;
+}
+.top-social-media > a > i{
+    color: white;
+    padding-left: 5px;
+    font-size: 10px;
+}
+
+        /*Main Navebar*/
+.logo{
+    width: 260px;
+    padding: 25px 10px;
+}
+.navbar{
+    padding: 25px 0px !important;
+    font-size: 10px;
+    font-weight: 650;
+}
+.color-menu ul > li > a{
+    color:#747474 !important;
+    padding: 20px 11px !important;
+}
+.color-menu ul > li > a:hover{
+    color: #790000 !important;
+    border-bottom: 3px solid #790000;
+}
+.search-box{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-84%,-55%);
+    background: #353b48;
+    height: 40px;
+    border-radius: 50px;
+    padding: 0px;
+}
+
+.search-box:hover .search-txt{
+    width: 200px;
+    padding: 0 6px;
+}
+.search-box:hover .search-btn{
+    background: #fff;
+    margin-top: -40px;
+}
+.search-btn{
+    color:#e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-txt{
+    border:none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color:#fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: width 400ms;
+}
+
+        /*Main Banner*/
+.banner-img{
+    width: 100%;
+    position: absolute;
+}
+.form-bg{
+    background-color:
+    #c03c3c; padding: 20px;
+}
+.form-h1{
+    color: aliceblue;
+    font-weight: 300;
+}
+.form-label{
+    margin-bottom: 0rem;
+    font-size: 11px;
+    color: aliceblue;
+}
+.chekout-label{
+    color: aliceblue;
+    font-size: 12px;
+    font-weight: 100;
+}
+.form-input-field{
+    border: none !important;
+    font-size: 0.7em !important;
+    border-radius: 0px !important;
+    color: #f85b5b !important;
+    height: 25px !important;
+}
+.form-btn{
+    background-color: white;
+    border: none;
+    font-size: 13px;
+    padding: 3px 21px;
+    color: #cc2b2be8;
+}
+.form-check{
+    padding-bottom: 40px;
+}
+.form-cancel-btn{
+    padding: 3px 40px !important;
+    margin-left: 10px;
+}
+.banner-h1{
+    color: aliceblue;
+    font-size: 72px;
+    font-weight: 400;
+    margin-top: 170px;
+}
+.banner-p{
+    color: white;
+    font-size: 23px;
+    text-shadow: 4px 3px #242424;
+}
+.banner-btn-img{
+    background-color: #780101;
+    padding: 4px;
+    margin-left: -6px;
+    height: 45px;
+}
+.banner-btn{
+    border: 3px solid #780101;
+    background-color: #a50000;
+    padding: 0px 6px;
+    color: aliceblue;
+    font-variant: small-caps;
+    font-family: 'Eczar', serif;
+    font-size: 20px;
+}
+.banner-upar-img{
+    margin-top: 85px;
+    width: 100%
+}
+
+        /*Who We Are*/
+.section-img{
+    width:12%;
+}
+.who-are-h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Rajdhani', sans-serif;
+}
+.who-are-p{
+    font-size: 14px;
+    font-weight: 100;
+    padding: 0px 15px 0px 0px;
+}
+.who-are-arrow{
+    color: brown;
+    font-size: 40px
+}
+.about-us-h4{
+font-family: 'Rajdhani', sans-serif;
+}
+.slick-prev:before, .slick-next:before {
+    color: #2e0a0a !important;
+    font-size: 25px !important;
+}
+.slick-prev{
+    margin-top: 148px;
+    width: 9% !important;
+    height: 14% !important;
+    border-radius: 11px;
+}
+.slick-next{
+    margin-top: 148px;
+    width: 9% !important;
+    height: 14% !important;
+    border-radius: 11px;;
+}
+ /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+        /*Our History*/
+.our-history-section-img{
+    width:94%;
+    margin-left: 30px;
+}
+.our-history-h5{
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+.ctrl-div{
+    width: 62%;
+    margin-left: 30px;
+}
+        /*Resecnt Products*/
+.product-p{
+    font-size: 8px;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+}
+.product-div-h1{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+.product-h1-1{
+    font-size: 25px;
+    font-weight: 600;
+    color: #5a5a5a;
+    padding-left: 10px;
+}
+.product-h1-2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #9b0f0f;
+    padding-left: 5px;
+}
+.simple-bar{
+    text-align: -webkit-center;
+    color: #8d1313;
+    margin-top: -35px;
+}
+.navbar-nav > a{
+    color: #444444;
+    font-size: 15px;
+    font-weight: 400;
+}
+.gallery{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    /*website image link*/
+.web-img-link > a > img{
+    width: 18%;
+    padding: 0px 15px;
+}
+.web-img-row-adjst{
+    padding: 40px 0px;
+    background-color: #ebebeb94;
+}
+.img-padding{
+       padding: 0px 35px !important;
+}
+
+    /*Footer*/
+.footer-logo{
+    width: 45%;
+}
+.bottom-col-padding{
+    padding: 5px 0px;
+}
+.footer-logo-col{
+    background-color: #303030;
+    text-align: right;
+    padding: 90px 20px;
+}
+.footer-logo-col > div > a{
+    padding: 0px 5px;
+    color: #666565;
+    font-size: 12px;
+}
+.footer-link-row{
+    background-color: #262626;
+    color: #666565;
+    padding: 30px 5px;
+    height: 100%;
+}
+.footer-h6{
+    font-size: 14px;
+    font-weight: 700;
+    padding: 25px 0px;
+}
+.footer-p{
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.8;
+}
+.footer-input-field{
+    height: 30px !important;
+    font-size: 11px !important;
+    background-color: #262626 !important;
+    border-radius: 1.25rem !important;
+}
+.footer-rights-bar{
+    font-weight: bold;
+    background-color: #000000;
+    text-align: -webkit-center;
+    color: #666565;
+    font-size: 10px;
+    padding: 20px 0px 5px 0px;
+}
+
+    /*scroll back top button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #322f2f;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+#myBtn:hover {
+    background-color: #555;
+}
+
+
+
+
+ @media only screen and (max-width:600px) {
+    .banner-img{ filter: blur(8px); height: 100% !important; }
+    .line-brk{ display: inline-grid; line-height: 1.8; }
+    .banner-h1{  margin-top: 40px;  padding: 0px 55px; font-size: 40px; }
+    .banner-p{ padding: 0px 10px; font-size: 17px; }
+    .banner-btn{ display: inline-flex; }
+    .banner-btn-img{  height: 43px; }
+    .form-h1{ display: none; }
+    .form-btn { font-size: 12px;  padding: 3px 15px;  display: inline-flex; }
+    .form-check{ padding-bottom: 0px; }
+    .form-bg{ margin-top: 15px;  margin-bottom: 20px; }
+    .banner-upar-img { margin-top: 23px; }
+    .who-are-h1 {  margin-top: -10px; }
+    .section-img{ width:35%; }
+    .who-are-p {  font-size: 13px;  padding: 0px 12px 0px 12px; }
+    .about-us-h4{ padding: 0px 14px; margin-top: -25px; }
+    .our-history-section-img{ display: none; }
+    .ctrl-div { width: 50%; margin-left: 2px; }
+    .our-history-h5 { font-size: 14px; }
+    #product{    margin-left: -45px;}
+    .product-h1-bar{    margin-left: -30px;}
+    .mail-resposive{    margin-top: -18px; margin-left: 153px; }
+    .top-social-media { margin-left:-30px; }
+    .top-social-media > a > i {  font-size: 15px; }
+    .navbar-toggler:not(:disabled):not(.disabled) { margin-top: -32px; }
+    .ctrl-div-1 { padding: 0px 5px;  border-right: 2px solid; }
+    .ctrl-div-2 { padding: 0px 5px;  border-left: 2px solid; }
+    .text-align-div{ text-align: -webkit-right; }
+    .bottom-col-padding { margin-left: 0px; text-align: -webkit-center; }
+    .footer-logo{ width: 80%; }
+    .footer-logo-col { padding: 0px 0px 0px 0px;  }
+    .footer-logo-col > div > a { font-size: 21px; }
+    .hide-mbl-view{ display: none; }
+    .logo-adjust-mbl-view{  text-align: -webkit-right; }
+    .navbar{ margin-top: -64px; }
+    .img-padding{ padding: 0px 8px !important; }
+    .display-none-mbl-view{display: none !important;}
+
+}
+
+/*@media (max-width: 480px) {
+    .banner-img{
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        }
+    #about{
+            display:none;
+         }
+}*/
