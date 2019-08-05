@@ -85,52 +85,59 @@
                     <h1 class="who-are-h1">Our History?</h1>
                     <img src="img/Final-UI-.png"  class="section-img">
                 </div>
-               a <div class="col-md-2"></div>
+                <div class="col-md-2"></div>
             </div>
 
             <div class="row mt-3 mb-5">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
                     <div class="row " class="margin-top: 10px;">
-                        
+                           <?php
+                            $sql = "SELECT * FROM our_history ORDER BY user_id ASC LIMIT 12";
+                            $result = $conn->query($sql);
+                               if ($result->num_rows > 0) {
+                                   // output data of each row
+                                while($row = $result->fetch_assoc()) {
+
+                                    $year= $row['year'];
+                                    $description= $row['description'];
+                            ?>
                         <div class="col-md-3" style="">
                             <div class="row">
-                                
                                     <div class="col-md-12 img_o" style="
-                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-                                    
+                                    background-image: url('img/for-SH-Knit-Wear.png');
+                                    width:100%;
                                     height: 23px;
                                     object-fit:center;
                                     background-repeat:
                                     no-repeat;
                                     background-position: center;">
-                                        
                                     </div>
-                                
-                                
                             </div>
                             <div class="ctrl-div ctrl-div-1 text-center" style="
-                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
-                                <h5 class="our-history-h5" >
-                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
+                                width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
+                                <h5 class="our-history-h5 " >
+                                    <?php echo "$year <br><br>"; ?>
+                                    <?php echo "$description"; ?>
                                 </h5>
                             </div>
                         </div>
-                       <div class="col-md-3" style="">
+                        <?php }}?>
+                      <!--  <div class="col-md-3" style="">
                             <div class="row">
-                                
+
                                     <div class="col-md-12 img_o" style="
                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-                                    
+
                                     height: 23px;
                                     object-fit:center;
                                     background-repeat:
                                     no-repeat;
                                     background-position: center;">
-                                        
+
                                     </div>
-                                
-                                
+
+
                             </div>
                             <div class="ctrl-div ctrl-div-1 text-center" style="
                             width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
@@ -141,19 +148,19 @@
                         </div>
                         <div class="col-md-3" style="">
                             <div class="row">
-                                
+
                                     <div class="col-md-12 img_o" style="
                                     background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-                                    
+
                                     height: 23px;
                                     object-fit:center;
                                     background-repeat:
                                     no-repeat;
                                     background-position: center;">
-                                        
+
                                     </div>
-                                
-                                
+
+
                             </div>
                             <div class="ctrl-div ctrl-div-1 text-center" style="
                             width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
@@ -164,19 +171,19 @@
                         </div>
                         <div class="col-md-3" style="">
                             <div class="row">
-                                
+
                                     <div class="col-md-12 img_o" style="
                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-                                    
+
                                     height: 23px;
                                     object-fit:center;
                                     background-repeat:
                                     no-repeat;
                                     background-position: center;">
-                                        
+
                                     </div>
-                                
-                                
+
+
                             </div>
                             <div class="ctrl-div ctrl-div-1 text-center" style="
                             width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
@@ -184,7 +191,7 @@
                                     1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
                                 </h5>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -221,15 +228,10 @@
                             $sql = "SELECT * FROM gallery ORDER BY user_id ASC LIMIT 6";
 
                             $result = $conn->query($sql);
-
                                if ($result->num_rows > 0) {
-
                                    // output data of each row
-
                                 while($row = $result->fetch_assoc()) {
-
                                         $image      = $row["image"];
-
                         ?>
                             <div class=" col-md-4  thumb" style="margin-top: 25px;">
                                 <a href="admin/gallery/<?php echo $image; ?>" class="fancybox" rel="ligthbox">
@@ -288,17 +290,11 @@
                     <div class="autoplay ">
                         <?php
                             $sql = "SELECT * FROM clients ORDER BY user_id ASC LIMIT 6";
-
                             $result = $conn->query($sql);
-
                                if ($result->num_rows > 0) {
-
                                    // output data of each row
-
                                 while($row = $result->fetch_assoc()) {
-
                                         $image      = $row["image"];
-
                             ?>
                                 <div>
                                     <a href="#">

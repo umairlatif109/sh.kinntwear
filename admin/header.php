@@ -144,6 +144,14 @@ table, th,td {
 								<li ><a href="mange_contact_us_info.php">List</a></li>
 							  </ul>
 							</li>
+
+							<li class="dropdown">
+							  <a href="home.php" class="dropdown-toggle" data-toggle="dropdown">History years </a>
+							  <ul class="dropdown-menu">
+								<li><a href="add_our_history_carousel.php">Add New</a></li>
+								<li ><a href="mange_our_history_carousel.php">List</a></li>
+							  </ul>
+							</li>
 							<!-- <li class="dropdown">
 							  <a href="home.php" class="dropdown-toggle" data-toggle="dropdown">contect us form </a>
 							  <ul class="dropdown-menu">

@@ -3,10 +3,10 @@ include "config.php";
 /* This query for delete item from table */
 
 $delete_id = $_GET['id'];
-$delete_query  = "DELETE FROM about_us WHERE user_id='$delete_id'";
+$delete_query  = "DELETE FROM our_history WHERE user_id='$delete_id'";
 
 if ($conn->query($delete_query) === TRUE) {
-    echo "<script>window.open('mange_about_us.php?deleted=Post deleted','_self')</script>";
+    echo "<script>window.open('mange_our_history_carousel.php?deleted=Post deleted','_self')</script>";
 } else {
     echo "Error deleting record: " . $$conn->error;
 }

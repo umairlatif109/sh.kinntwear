@@ -23,7 +23,7 @@ table, th,td {
     margin-right: 295px;
     margin-top: -67px;
     padding: 7px 22px;
-    font-weight: 700;	
+    font-weight: 700;
     background-clip: padding-box;
 	 }
 	 th{
@@ -53,15 +53,15 @@ table, th,td {
 </thead>
 					<?php
 						$sql = "SELECT * FROM menu  ";
-						
+
 						  	$result = $conn->query($sql);
 
 						   if ($result->num_rows > 0) {
-							   
+
 							// output data of each row
-							
+
 							while($row = $result->fetch_assoc()) {
-								
+
 					        $menu_name 		= $row["menu_name"];
 							$menu_icon	 	= $row["menu_icon"];
 							$menu_icon_last	= $row['menu_icon_last'];
@@ -83,7 +83,7 @@ table, th,td {
 								<a href="del_menu.php?id=<?php echo $menu_id; ?>" onClick="return do_confirm();" style="font-size: 29px; " >
 									<i class="fa fa-trash" aria-hidden="true" style="color: red;"></i>
 								</a>
-								
+
 							</td>
 						</tr>
 					</tbody>
@@ -92,17 +92,12 @@ table, th,td {
 
 					<?php
 						$sql = "SELECT * FROM menu ";
-						
 						  $result = $conn->query($sql);
-
 						   if ($result->num_rows > 0) {
-							   
 							// output data of each row
-							
 							while($row = $result->fetch_assoc()) {
-								
 							$menu_id= $row['menu_id'];
-							
+
 					?>
 					<a href="all_del_menu.php?id=<?php echo $menu_id; ?>" onClick="return do_confirm();" >
 						<input type="submit" name="submit" value="Delete All" style="background-color: #000; color: #fff;">

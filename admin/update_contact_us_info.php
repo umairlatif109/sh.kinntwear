@@ -15,13 +15,9 @@ $select_id =  ($_GET['id']);
                     <?php
 
                         $sql  = "SELECT * FROM contact_us_info WHERE user_id='$select_id'";
-
                             $result = $conn->query($sql);
-
                            if ($result->num_rows > 0) {
-
                             // output data of each row
-
                             while($row = $result->fetch_assoc()) {
 
                             $user_id = $row["user_id"];

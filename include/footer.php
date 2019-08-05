@@ -17,21 +17,15 @@
                             <h6 class="footer-h6">Contact</h6>
                             <?php
                             $sql = "SELECT * FROM contact_us_info ORDER BY user_id ASC LIMIT 6";
-
                             $result = $conn->query($sql);
-
                                if ($result->num_rows > 0) {
-
                                    // output data of each row
-
                                 while($row = $result->fetch_assoc()) {
 
                                     $address= $row['address'];
                                     $phon_no= $row['phon_no'];
                                     $info_mail= $row['info_mail'];
                                     $marketing_mail= $row['marketing_mail'];
-
-
                             ?>
                             <p class="footer-p">
                                 <?php echo "$address <br>"; ?>
@@ -39,13 +33,7 @@
                                 <?php echo "$info_mail <br>"; ?>
                                 <?php echo"Email :$marketing_mail <br>" ; ?>
                                 <SPAN style="font-size: 9px; margin-left: 37px;">(Marketing & Merchandize Dept.)</SPAN>
-                                <!-- P-139/140, Central Mills Road, Jhang Road, Faisalabad-Pakistan <br>
-                               +92-41-2653926 <br>
-                               info@shknitwear.com <br>
-                               Email : marketing@shknitwear.com <br>
- -->
-
-                           </p>
+                            </p>
                            <?php }}?>
 
                         </div>
