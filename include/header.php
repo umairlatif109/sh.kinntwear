@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>D.H.KNITWEAR</title>
+    <title>S.H.KNITWEAR</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- this script link use for menu function-->
  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
