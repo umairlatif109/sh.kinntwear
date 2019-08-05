@@ -85,40 +85,103 @@
                     <h1 class="who-are-h1">Our History?</h1>
                     <img src="img/Final-UI-.png"  class="section-img">
                 </div>
-                <div class="col-md-2"></div>
+               a <div class="col-md-2"></div>
             </div>
 
             <div class="row mt-3 mb-5">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <img src="img/for-SH-Knit-Wear.png" class="our-history-section-img">
-
-                    <div class="row" class="margin-top: 10px;">
-                        <div class="col-md-3">
-                            <div class="ctrl-div ctrl-div-1 ">
+                    <div class="row " class="margin-top: 10px;">
+                        
+                        <div class="col-md-3" style="">
+                            <div class="row">
+                                
+                                    <div class="col-md-12 img_o" style="
+                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
+                                    
+                                    height: 23px;
+                                    object-fit:center;
+                                    background-repeat:
+                                    no-repeat;
+                                    background-position: center;">
+                                        
+                                    </div>
+                                
+                                
+                            </div>
+                            <div class="ctrl-div ctrl-div-1 text-center" style="
+                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
                                 <h5 class="our-history-h5" >
                                     1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
                                 </h5>
                             </div>
                         </div>
-                        <div class="col-md-3 text-align-div">
-                            <div class="ctrl-div ctrl-div-2">
-                                <h5 class="our-history-h5">
-                                    2000 <br><br> Things moved on and we shifted totally to export being an sole export oriented production setup
+                       <div class="col-md-3" style="">
+                            <div class="row">
+                                
+                                    <div class="col-md-12 img_o" style="
+                                   background-image: url('img/for-SH-Knit-Wear.png');width:100%;
+                                    
+                                    height: 23px;
+                                    object-fit:center;
+                                    background-repeat:
+                                    no-repeat;
+                                    background-position: center;">
+                                        
+                                    </div>
+                                
+                                
+                            </div>
+                            <div class="ctrl-div ctrl-div-1 text-center" style="
+                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
+                                <h5 class="our-history-h5" >
+                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
                                 </h5>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="ctrl-div ctrl-div-1">
-                                <h5 class="our-history-h5">
-                                    2010 <br><br> We introduced our in-house fabric dyeing setup henceforth becoming a 'Vertically oriented Apparel Manufacturing setup'
+                        <div class="col-md-3" style="">
+                            <div class="row">
+                                
+                                    <div class="col-md-12 img_o" style="
+                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
+                                    
+                                    height: 23px;
+                                    object-fit:center;
+                                    background-repeat:
+                                    no-repeat;
+                                    background-position: center;">
+                                        
+                                    </div>
+                                
+                                
+                            </div>
+                            <div class="ctrl-div ctrl-div-1 text-center" style="
+                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
+                                <h5 class="our-history-h5" >
+                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
                                 </h5>
                             </div>
                         </div>
-                        <div class="col-md-3 text-align-div">
-                            <div class="ctrl-div ctrl-div-2">
-                                <h5 class="our-history-h5">
-                                    Till Date <br><br> We continue our operations and aim to excel further ensuring our customer satisfaction
+                        <div class="col-md-3" style="">
+                            <div class="row">
+                                
+                                    <div class="col-md-12 img_o" style="
+                                   background-image: url('img/for-SH-Knit-Wear.png');width:100%;
+                                    
+                                    height: 23px;
+                                    object-fit:center;
+                                    background-repeat:
+                                    no-repeat;
+                                    background-position: center;">
+                                        
+                                    </div>
+                                
+                                
+                            </div>
+                            <div class="ctrl-div ctrl-div-1 text-center" style="
+                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
+                                <h5 class="our-history-h5" >
+                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
                                 </h5>
                             </div>
                         </div>

@@ -86,7 +86,7 @@
                         <div class="collapse navbar-collapse color-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto mt-5 mt-lg-0">
                                 <?php
-                                    $sql = "SELECT * FROM menu limit 6";
+                                    $sql = "SELECT * FROM menu limit 7";
 
                                        $result = $conn->query($sql);
 
