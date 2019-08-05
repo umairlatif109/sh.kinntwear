@@ -34,16 +34,17 @@
 
                             ?>
                             <p class="footer-p">
-                                <?php echo $address; ?>
-                                <?php echo $phon_no; ?>
-                                <?php echo $info_mail; ?>
-
+                                <?php echo "$address <br>"; ?>
+                                <?php echo "$phon_no <br>"; ?>
+                                <?php echo "$info_mail <br>"; ?>
+                                <?php echo"Email :$marketing_mail <br>" ; ?>
+                                <SPAN style="font-size: 9px; margin-left: 37px;">(Marketing & Merchandize Dept.)</SPAN>
                                 <!-- P-139/140, Central Mills Road, Jhang Road, Faisalabad-Pakistan <br>
                                +92-41-2653926 <br>
                                info@shknitwear.com <br>
                                Email : marketing@shknitwear.com <br>
- -->                               &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
-                               <SPAN style="font-size: 9px;">(Marketing & Merchandize Dept.)</SPAN>
+ -->
+
                            </p>
                            <?php }}?>
 
