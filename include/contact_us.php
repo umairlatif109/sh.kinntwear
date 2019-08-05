@@ -32,7 +32,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-8">
-                                <h1 class="banner-h1">30 Year of Experience</h1>
+                                <h1 class="banner-h1">40+ Years of Experience</h1>
                                 <p class="banner-p">Choose from one of our stock designs or have something designed specific for you, we can help.</p>
                                 <button class="banner-btn"><img src="img/new_offe.png" class="banner-btn-img"> Our Profile</button>
                                 <button class="banner-btn"><img src="img/phone.png" class="banner-btn-img"> Contact Us</button>
