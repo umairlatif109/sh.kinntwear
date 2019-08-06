@@ -123,6 +123,12 @@
                             </div>
                         </div>
                         <?php }}?>
+
+
+
+
+
+
                       <!--  <div class="col-md-3" style="">
                             <div class="row">
 
@@ -197,6 +203,32 @@
                 </div>
                 <div class="col-md-2"></div>
             </div>
+
+
+                 <!-- Our History years & Description-->
+                <div class="row">
+                    <div class="col-md-12 Year_description">
+                        <div class="autoplay ">
+                            <?php
+                            $sql = "SELECT * FROM our_history ORDER BY user_id ASC LIMIT 12";
+                            $result = $conn->query($sql);
+                               if ($result->num_rows > 0) {
+                                   // output data of each row
+                                while($row = $result->fetch_assoc()) {
+
+                                    $year= $row['year'];
+                                    $description= $row['description'];
+                            ?>
+
+                                <div>
+                                    <?php echo "$year <br><br>"; ?>
+                                    <?php echo "$description"; ?>
+                                </div>
+                            <?php }} ?>
+                        </div>
+                    </div>
+                </div>
+
 
               <!-- Recent Product -->
             <div id="product" class="row mt-5">
