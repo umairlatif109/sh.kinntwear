@@ -91,7 +91,6 @@
                  <!-- Our History years & Description-->
                 <div class="row">
                     <div class="col-md-2">
-                        
                     </div>
                     <div class="col-md-8 Year_description">
                         <div class="autoplay1 row">
@@ -106,8 +105,7 @@
                                     $description= $row['description'];
                             ?>
 
-                                
-                                    <div class="col-md-3" style="">
+                                    <div class="col-md-3">
                                         <div class="row">
                                                 <div class="col-md-12 img_o" style="
                                                 background-image: url('img/for-SH-Knit-Wear.png');
@@ -129,12 +127,12 @@
                                         <!-- <?php echo "$year <br><br>"; ?>
                                     <?php echo "$description"; ?> -->
                                     </div>
-                                
+
                             <?php }} ?>
                         </div>
                     </div>
                     <div class="col-md-2">
-                        
+
                     </div>
                 </div>
 
