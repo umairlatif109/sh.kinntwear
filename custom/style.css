@@ -370,7 +370,7 @@ font-family: 'Rajdhani', sans-serif;
     .top-social-media { margin-left:-30px; }
     .top-social-media > a > i {  font-size: 15px; }
     .navbar-toggler:not(:disabled):not(.disabled) { margin-top: -32px; }
-    .ctrl-div-1 { padding: 0px 5px;  border-right: 2px solid; }
+    .ctrl-div-1 { padding: 0px 5px;  }
     .ctrl-div-2 { padding: 0px 5px;  border-left: 2px solid; }
     .text-align-div{ text-align: -webkit-right; }
     .bottom-col-padding { margin-left: 0px; text-align: -webkit-center; }
