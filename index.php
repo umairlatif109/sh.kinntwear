@@ -32,7 +32,7 @@
                 <div class="col-md-4">
                     <h4 class="about-us-h4">About Us</h4>
                     <?php
-                            $sql = "SELECT * FROM about_us ORDER BY user_id ASC LIMIT 6";
+                            $sql = "SELECT * FROM about_us ";
 
                             $result = $conn->query($sql);
 
@@ -162,6 +162,7 @@
             <div class="row display-none-mbl-view">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
+                    <a href="gallery.php"><button type="button" class="btn btn-secondary btn-lg" style="margin-left: 80px;">Gallery</button></a>
                     <div class="row ">
                         <?php
                             $sql = "SELECT * FROM gallery ORDER BY user_id ASC LIMIT 6";
@@ -178,7 +179,6 @@
                                 </a>
                             </div>
                         <?php }} ?>
-
                     </div>
                 </div>
                 <div class="col-md-2"></div>
@@ -228,7 +228,7 @@
                 <div class="col-md-12 web-img-row-adjst">
                     <div class="autoplay ">
                         <?php
-                            $sql = "SELECT * FROM clients ORDER BY user_id ASC LIMIT 6";
+                            $sql = "SELECT * FROM clients ORDER BY user_id ASC LIMIT 20";
                             $result = $conn->query($sql);
                                if ($result->num_rows > 0) {
                                    // output data of each row

@@ -4,78 +4,40 @@
     include 'include/header.php';
 
 ?>
-<head>
-    
-<link rel="stylesheet" type="text/css" href="custom/gallerypage.css">
-</head>
-<div class="row">
-    <div class="col-lg-12 text-center my-2">
-               <h4 class="border-bottom border-dark p-2">GALLERY</h4>
+
+            <div class="row" style="text-align: -webkit-center; margin: 10px 0px;">
+                <div class="col-md-12">
+                    <h4 class="border-bottom p-2">GALLERY</h4>
+                </div>
             </div>
-    <div class="col-lg-12 col-md-12">
-        <div class="container">
-            
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                           
-                        </a>
+
+            <br><br>
+            <div class="row display-none-mbl-view">
+
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div class="row ">
+                        <?php
+                            $sql = "SELECT * FROM gallery ORDER BY user_id ASC LIMIT 15";
+
+                            $result = $conn->query($sql);
+                               if ($result->num_rows > 0) {
+                                   // output data of each row
+                                while($row = $result->fetch_assoc()) {
+                                        $image      = $row["image"];
+                        ?>
+                            <div class=" col-md-4  thumb" style="margin-top: 25px;">
+                                <a href="admin/gallery/<?php echo $image; ?>" class="fancybox" rel="ligthbox">
+                                    <img  src="admin/gallery/<?php echo $image; ?>" class="zoom img-fluid "  alt="">
+                                </a>
+                            </div>
+                        <?php }} ?>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
-                        </a>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
-                    
-                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
-                    
-                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
-                    
-                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
-                    
-                     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                        <a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
-                            <img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
-                        </a>
-                    </div>
+                </div>
+                <div class="col-md-2"></div>
             </div>
-    </div>
-
-
-    </div>
-    
-</div>
-
 
 <?php include 'include/footer.php' ?>
-
-
-
 
 <script type="text/javascript">
 $(document).ready(function(){
@@ -83,14 +45,14 @@ $(document).ready(function(){
         openEffect: "none",
         closeEffect: "none"
     });
-    
+
     $(".zoom").hover(function(){
-        
+
         $(this).addClass('transition');
     }, function(){
-        
+
         $(this).removeClass('transition');
     });
 });
-    
+
 </script>
