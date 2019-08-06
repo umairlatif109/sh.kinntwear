@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 19, 2019 at 04:43 PM
+-- Generation Time: Aug 05, 2019 at 03:53 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.2
 
@@ -150,7 +150,8 @@ INSERT INTO `menu` (`menu_id`, `menu_name`, `menu_icon`, `menu_icon_last`, `menu
 (21, 'HISTORY', '', '', '#history'),
 (22, 'PRODUCT', '', '', '#product'),
 (23, 'CLIENTS', '', '', '#client'),
-(24, 'CONTACT', '', '', '#contact');
+(24, 'CONTACT', '', '', '#contact'),
+(26, 'GALLERY', '', '', 'gallery.php');
 
 -- --------------------------------------------------------
 
@@ -175,6 +176,28 @@ INSERT INTO `mini_slider` (`user_id`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `our_history`
+--
+
+CREATE TABLE `our_history` (
+  `user_id` int(11) NOT NULL,
+  `year` varchar(50) NOT NULL,
+  `description` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `our_history`
+--
+
+INSERT INTO `our_history` (`user_id`, `year`, `description`) VALUES
+(3, '1983 ', 'Another production unit was launched to increase production capacity hence meeting market demands'),
+(4, '2000 ', 'Things moved on and we shifted totally to export being an sole export oriented production setup'),
+(7, '2010\r\n\r\n', 'Things moved on and we shifted totally to export being an sole export oriented production setup'),
+(8, '2010\r\n', 'Things moved on and we shifted totally to export being an sole export oriented production setup');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -192,7 +215,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`userId`, `userName`, `userEmail`, `userPass`) VALUES
 (1, 'ali', 'ali@gmail.com', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'),
 (2, 'umair latif', 'umair109109@gmail.com', '6297664bc2451adaa477350e376d87c3ed82d79fbf6b0e981569af2c73c987a5'),
-(3, 'm umair', 'umair@gmail.com', '5f6121bc06e18e209920d57d2f16b17cc82dfc2ade1d375d6951b99c65d1b89d');
+(3, 'm umair', 'umair@gmail.com', '5f6121bc06e18e209920d57d2f16b17cc82dfc2ade1d375d6951b99c65d1b89d'),
+(4, 'asad', 'asad.best.ab@gmail.com', 'b0b818cd5e235dda583aa6ec6f47a71038250ff9d7797cd4836822ac4ef75989');
 
 --
 -- Indexes for dumped tables
@@ -241,6 +265,12 @@ ALTER TABLE `mini_slider`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `our_history`
+--
+ALTER TABLE `our_history`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -279,25 +309,31 @@ ALTER TABLE `gallery`
 -- AUTO_INCREMENT for table `logo`
 --
 ALTER TABLE `logo`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
-  MODIFY `menu_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `menu_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `mini_slider`
 --
 ALTER TABLE `mini_slider`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `our_history`
+--
+ALTER TABLE `our_history`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

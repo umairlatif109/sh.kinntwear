@@ -135,6 +135,7 @@ $('.single-item').slick({
     }
   ]
     });
+   
 </script>
 
 <!--  for gallery poopup -->
@@ -187,6 +188,5 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 </script>
-
 </body>
 </html>
