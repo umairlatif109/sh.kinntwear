@@ -88,127 +88,13 @@
                 <div class="col-md-2"></div>
             </div>
 
-            <div class="row mt-3 mb-5">
-                <div class="col-md-2"></div>
-                <div class="col-md-8">
-                    <div class="row " class="margin-top: 10px;">
-                           <?php
-                            $sql = "SELECT * FROM our_history ORDER BY user_id ASC LIMIT 12";
-                            $result = $conn->query($sql);
-                               if ($result->num_rows > 0) {
-                                   // output data of each row
-                                while($row = $result->fetch_assoc()) {
-
-                                    $year= $row['year'];
-                                    $description= $row['description'];
-                            ?>
-                        <div class="col-md-3" style="">
-                            <div class="row">
-                                    <div class="col-md-12 img_o" style="
-                                    background-image: url('img/for-SH-Knit-Wear.png');
-                                    width:100%;
-                                    height: 23px;
-                                    object-fit:center;
-                                    background-repeat:
-                                    no-repeat;
-                                    background-position: center;">
-                                    </div>
-                            </div>
-                            <div class="ctrl-div ctrl-div-1 text-center" style="
-                                width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
-                                <h5 class="our-history-h5 " >
-                                    <?php echo "$year <br><br>"; ?>
-                                    <?php echo "$description"; ?>
-                                </h5>
-                            </div>
-                        </div>
-                        <?php }}?>
-
-
-
-
-
-
-                      <!--  <div class="col-md-3" style="">
-                            <div class="row">
-
-                                    <div class="col-md-12 img_o" style="
-                                   background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-
-                                    height: 23px;
-                                    object-fit:center;
-                                    background-repeat:
-                                    no-repeat;
-                                    background-position: center;">
-
-                                    </div>
-
-
-                            </div>
-                            <div class="ctrl-div ctrl-div-1 text-center" style="
-                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
-                                <h5 class="our-history-h5" >
-                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3" style="">
-                            <div class="row">
-
-                                    <div class="col-md-12 img_o" style="
-                                    background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-
-                                    height: 23px;
-                                    object-fit:center;
-                                    background-repeat:
-                                    no-repeat;
-                                    background-position: center;">
-
-                                    </div>
-
-
-                            </div>
-                            <div class="ctrl-div ctrl-div-1 text-center" style="
-                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
-                                <h5 class="our-history-h5" >
-                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
-                                </h5>
-                            </div>
-                        </div>
-                        <div class="col-md-3" style="">
-                            <div class="row">
-
-                                    <div class="col-md-12 img_o" style="
-                                   background-image: url('img/for-SH-Knit-Wear.png');width:100%;
-
-                                    height: 23px;
-                                    object-fit:center;
-                                    background-repeat:
-                                    no-repeat;
-                                    background-position: center;">
-
-                                    </div>
-
-
-                            </div>
-                            <div class="ctrl-div ctrl-div-1 text-center" style="
-                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
-                                <h5 class="our-history-h5" >
-                                    1983 <br><br> Another production unit was launched to increase production capacity hence meeting market demands
-                                </h5>
-                            </div>
-                        </div> -->
-                    </div>
-
-                </div>
-                <div class="col-md-2"></div>
-            </div>
-
-
                  <!-- Our History years & Description-->
                 <div class="row">
-                    <div class="col-md-12 Year_description">
-                        <div class="autoplay ">
+                    <div class="col-md-2">
+                        
+                    </div>
+                    <div class="col-md-8 Year_description">
+                        <div class="autoplay1 row">
                             <?php
                             $sql = "SELECT * FROM our_history ORDER BY user_id ASC LIMIT 12";
                             $result = $conn->query($sql);
@@ -220,12 +106,35 @@
                                     $description= $row['description'];
                             ?>
 
-                                <div>
-                                    <?php echo "$year <br><br>"; ?>
-                                    <?php echo "$description"; ?>
-                                </div>
+                                
+                                    <div class="col-md-3" style="">
+                                        <div class="row">
+                                                <div class="col-md-12 img_o" style="
+                                                background-image: url('img/for-SH-Knit-Wear.png');
+                                                width:100%;
+                                                height: 23px;
+                                                object-fit:center;
+                                                background-repeat:
+                                                no-repeat;
+                                                background-position: center;">
+                                                </div>
+                                        </div>
+                                         <div class="ctrl-div ctrl-div-1 text-center" style="
+                                            width: 80%;margin: 0px 10%;padding: 0px;margin-top: 5px;">
+                                            <h5 class="our-history-h5 " >
+                                                <?php echo "$year <br><br>"; ?>
+                                                <?php echo "$description"; ?>
+                                            </h5>
+                                        </div>
+                                        <!-- <?php echo "$year <br><br>"; ?>
+                                    <?php echo "$description"; ?> -->
+                                    </div>
+                                
                             <?php }} ?>
                         </div>
+                    </div>
+                    <div class="col-md-2">
+                        
                     </div>
                 </div>
 
